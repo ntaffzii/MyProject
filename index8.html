@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="calculator">
+    <h1>BMI Calculator (คํานวน BMI)</h1>
+    <h2>สําหรับผู้ชาย</h2>
+    <input type="number" id="height_M" placeholder="ส่วนสูง (cm)" />
+    <input type="number" id="weight_M" placeholder="น้ำหนัก (kg)" />
+    <button onclick="calculateBMI_M()">คํานวนค่า BMI</button>
+    <div class="result_M" id="result_M"></div>
+    <h2>สําหรับผู้หญิง</h2>
+    <input type="number" id="height_F" placeholder="ส่วนสูง (cm)" />
+    <input type="number" id="weight_F" placeholder="น้ำหนัก (kg)" />
+    <button onclick="calculateBMI_F()">คํานวนค่า BMI</button>
+    <div class="result_F" id="result_F"></div>
+</div>
+
+<div class="table-container">
+    <h1>Table</h1>
+    <h4>ดัชนีมวลกายสำหรับผู้ชาย</h4>
+    <table border = "1">
+    <tr>
+        <th>BMI ผู้ชาย (kg/m2)</th>
+        <th>อยู่ในเกณท์</th>
+        <th>ภาวะเสี่ยงต่อโรค</th>
+    </tr>
+    <tr>
+        <td>น้อยกว่า 18.5</td>
+        <td>ผอม (Underweight)</td>
+        <td>เสี่ยงมากกว่าปกติ</td>
+    </tr>
+    <tr>
+        <td>18.5 - 24.9</td>
+        <td>ปกติ (Normal weight)</td>
+        <td>ปกติ</td>
+    </tr>
+    <tr>
+        <td>25 - 29.9</td>
+        <td>ท้วม (Overweight)</td>
+        <td>เสี่ยง</td>
+    </tr>
+    <tr>
+        <td>30 - 34.9</td>
+        <td>โรคอ้วนระดับ 1 (Obese class I)</td>
+        <td>เสี่ยงมาก</td>
+    </tr>
+    <tr>
+        <td>35 - 39.9</td>
+        <td>โรคอ้วนระดับ 2 (Obese class II)</td>
+        <td>เสี่ยงมากและเข้าสู่เกณฑ์อันตราย</td>
+    <tr>
+        <td>40 ขึ้นไป</td>
+        <td>โรคอ้วนระดับ 3 (Obese class III)	</td>
+        <td>เสี่ยงอันตรายมาก</td>
+    </tr>
+    </table>
+
+    <h4>ดัชนีมวลกายสำหรับผู้หญิง</h4>
+    <table border = "1">
+    <tr>
+        <th>BMI ผู้หญิง (kg/m2)</th>
+        <th>อยู่ในเกณท์</th>
+        <th>ภาวะเสี่ยงต่อโรค</th>
+    </tr>
+    <tr>
+        <td>น้อยกว่า 18.5</td>
+        <td>ผอม (Underweight)</td>
+        <td>เสี่ยงมากกว่าปกติ</td>
+    </tr>
+    <tr>
+        <td>18.5 - 23.9</td>
+        <td>ปกติ (Normal weight)</td>
+        <td>ปกติ</td>
+    </tr>
+    <tr>
+        <td>24 - 28.9</td>
+        <td>ท้วม (Overweight)</td>
+        <td>เสี่ยง</td>
+    </tr>
+    <tr>
+        <td>29 - 34.9</td>
+        <td>โรคอ้วนระดับ 1 (Obese class I)</td>
+        <td>เสี่ยงมาก</td>
+    </tr>
+    <tr>
+        <td>35 - 39.9</td>
+        <td>โรคอ้วนระดับ 2 (Obese class II)</td>
+        <td>เสี่ยงมากและเข้าสู่เกณฑ์อันตราย</td>
+    <tr>
+        <td>40 ขึ้นไป</td>
+        <td>โรคอ้วนระดับ 3 (Obese class III)	</td>
+        <td>เสี่ยงอันตรายมาก</td>
+    </tr>
+</div>
+
+<script src = "app8.js"></script>
+
+</body>
+</html>
